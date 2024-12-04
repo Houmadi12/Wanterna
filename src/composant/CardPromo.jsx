@@ -1,3 +1,5 @@
+import Lien from "./Lien"
+
 function CardPromo({produit}) {
     if (!produit || produit.length === 0) {
         return <div>Chargement d'API...</div>
@@ -13,8 +15,8 @@ function CardPromo({produit}) {
                 <p className="mb-3 font-light text-xl pt-4 text-gray-700 dark:text-gray-400">
                     {produit.category}
                 </p>
-                <div>
-                    <button type="button" className=" bg-[#333333] hover:bg-[#fd7e14] text-white text-[12px] px-1 py-1 md:text-xl md:px-4 md:py-3">Acheter maintenant</button>
+                <div className="py-2">
+                    <Lien lien="" text="Acheter maintenant" classe=" bg-[#333333] hover:bg-[#fd7e14] text-white text-[12px] md:text-md-lg md:px-4 md:py-3" />
                 </div>
             </div>
             <div className="h-full w-4/12">

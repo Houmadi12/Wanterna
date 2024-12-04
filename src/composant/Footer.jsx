@@ -64,7 +64,7 @@ function Footer() {
             <div className="py-5 bg-[#1E1E1E]">
                 <p className="text-center text-xl text-white">
                     Cette plateforme est réalisée par
-                    <a href="#" className="underline ml-2">PROMISING TEAM</a>
+                    <Lien lien="" text="PROMISING TEAM" classe="ml-2 text-white underline" />
                 </p>
             </div>
         </footer>

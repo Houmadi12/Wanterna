@@ -1,3 +1,5 @@
+import Lien from "./Lien"
+
 function CardSold({ produit, prix }) {
 
     if (!produit || produit.length === 0) {
@@ -15,11 +17,9 @@ function CardSold({ produit, prix }) {
                     {produit.title}
                 </h5>
                 <p className="mb-3 font-semibold text-[#fd7e14]">
-                    {prix}
+                    {produit.price} €
                 </p>
-                <a href="#" className="flex justify-center px-3 py-2 text-sm font-medium text-white bg-[#333333] hover:bg-[#fd7e14]">
-                    Voir produit
-                </a>
+                <Lien lien="" text=" Voir produit" classe="flex justify-center px-3 py-2 text-sm font-medium text-white bg-[#333333] hover:bg-[#fd7e14]" />
             </div>
         </div>
     )

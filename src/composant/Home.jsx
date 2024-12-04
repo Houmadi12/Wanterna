@@ -66,7 +66,7 @@ function Home() {
                 </div>
                 <div className="flex flex-col md:flex-row w-12/12 flex-wrap">
                     <div className=" w-full md:w-3/12 pr-0 md:pr-4 py-2">
-                        <CardSold produit={products[7]} prix="francs 500" />
+                        <CardSold produit={products[7]} prix={""} />
                     </div>
                     <div className="w-full md:w-3/12 pr-0 md:pr-4 py-2">
                         <CardSold produit={products[19]} prix="francs 500" />
