@@ -19,7 +19,7 @@ function Navbar() {
             classes += ' text-white bg-[#E40046]'
             classes1 += ' bg-white text-[#E40046]'
         }else{
-            classes += ' text-red-700'
+            classes += ' text-gray-500'
             classes1 += ' bg-[#E40046] text-white'
         }
 

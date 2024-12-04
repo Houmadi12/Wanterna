@@ -1,6 +1,6 @@
 import Lien from "./Lien"
 
-function CardSold({ produit, prix }) {
+function CardSold({ produit}) {
 
     if (!produit || produit.length === 0) {
         return <div>Chargement d'API...</div>
