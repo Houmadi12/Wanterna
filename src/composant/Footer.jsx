@@ -1,3 +1,5 @@
+import Lien from "./Lien"
+
 function Footer() {
     return (
         <footer>
@@ -17,48 +19,52 @@ function Footer() {
                     </div>
                 </form>
             </div>
-            <div className="flex justify-around py-12 bg-[#111111]">
-                <div>
-                    <h1 className="text-white font-bold text-xl">A propos</h1>
-                    <div className="flex flex-col gap-2 mt-2">
-                        <a href="#" className="text-gray-500">Entreprise</a>
-                        <a href="#" className="text-gray-500">Localisation</a>
-                        <a href="#" className="text-gray-500">Contacts</a>
-                        <a href="#" className="text-gray-500">Horaires d'ouvertures</a>
+            <div className="flex flex-col gap-10 md:gap-0 md:flex-row py-12 bg-[#111111]">
+                <div className="flex justify-around w-full md:w-2/4">
+                    <div>
+                        <h1 className="text-white font-bold text-xl">A propos</h1>
+                        <div className="flex flex-col gap-2 mt-2">
+                            <Lien lien="" text="Entreprise" classe="text-white" />
+                            <Lien lien="" text="Localisation" classe="text-white" />
+                            <Lien lien="" text="Contacts" classe="text-white" />
+                            <Lien lien="" text="Horaires d'ouvertures" classe="text-white" />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className="text-white font-bold text-xl">Liens utiles</h1>
+                        <div className="flex flex-col gap-2 mt-2">
+                            <Lien lien="" text="Aide" classe="text-white" />
+                            <Lien lien="" text="Politique de confidentialité" classe="text-white" />
+                            <Lien lien="" text="Termes et Conditions" classe="text-white" />
+                            <Lien lien="" text="FAQ" classe="text-white" />
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <h1 className="text-white font-bold text-xl">Liens utiles</h1>
-                    <div className="flex flex-col gap-2 mt-2">
-                        <a href="#" className="text-gray-500">Aide</a>
-                        <a href="#" className="text-gray-500">Politique de confidentialité</a>
-                        <a href="#" className="text-gray-500">Termes et Conditions</a>
-                        <a href="#" className="text-gray-500">FAQ</a>
+                <div className="flex justify-around w-full md:w-2/4">
+                    <div>
+                        <h1 className="text-white font-bold text-xl">Service client</h1>
+                        <div className="flex flex-col gap-2 mt-2">
+                            <Lien lien="" text="Méthodes de paiement" classe="text-white" />
+                            <Lien lien="" text="Remboursement" classe="text-white" />
+                            <Lien lien="" text="Retour" classe="text-white" />
+                            <Lien lien="" text="Expédition" classe="text-white" />
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <h1 className="text-white font-bold text-xl">Service client</h1>
-                    <div className="flex flex-col gap-2 mt-2">
-                        <a href="#" className="text-gray-500">Méthodes de paiement</a>
-                        <a href="#" className="text-gray-500">Remboursement</a>
-                        <a href="#" className="text-gray-500">Retour</a>
-                        <a href="#" className="text-gray-500">Expédition</a>
-                    </div>
-                </div>
-                <div>
-                    <h1 className="text-white font-bold text-xl">Nous joindre</h1>
-                    <div className="flex flex-col gap-2 mt-2">
-                        <a href="#" className="text-gray-500">Twitter</a>
-                        <a href="#" className="text-gray-500">Facebook</a>
-                        <a href="#" className="text-gray-500">Instagram</a>
-                        <a href="#" className="text-gray-500">Linkedin</a>
+                    <div>
+                        <h1 className="text-white font-bold text-xl">Nous joindre</h1>
+                        <div className="flex flex-col gap-2 mt-2">
+                            <Lien lien="" text="Twitter" classe="text-white" />
+                            <Lien lien="" text="Facebook" classe="text-white" />
+                            <Lien lien="" text="Instagram" classe="text-white" />
+                            <Lien lien="" text="Linkedin" classe="text-white" />
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="py-5 bg-[#1E1E1E]">
                 <p className="text-center text-xl text-white">
-                     Cette plateforme est réalisée par 
-                     <a href="#" className="underline ml-2">PROMISING TEAM</a>
+                    Cette plateforme est réalisée par
+                    <a href="#" className="underline ml-2">PROMISING TEAM</a>
                 </p>
             </div>
         </footer>
