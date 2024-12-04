@@ -1,8 +1,21 @@
 function Footer() {
     return (
         <footer>
-            <div>
-                
+            <div className="py-10">
+                <h1 className="text-xl text-center font-semibold">Wanterma ?</h1>
+                <p className="text-center py-4">Abonnez-vous à notre newsletter pour recevoir des mises à jour sur nos dernières offres!</p>
+
+                <form className="max-w-lg mx-auto">
+                    <div className="flex">
+                        <label htmlFor="search-dropdown" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
+                        <div className="relative w-full">
+                            <input type="search" id="search-dropdown" className="block p-1 w-full z-20 text-lg text-gray-900 bg-gray-50 border border-gray-400" placeholder="Email Adress" required />
+                            <button type="submit" className="absolute top-0 end-0 p-1 text-sm font-medium h-full text-white bg-[#333333] hover:bg-[#fd7e14]">
+                                S'abonner
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div className="flex justify-around py-12 bg-[#111111]">
                 <div>
@@ -41,6 +54,12 @@ function Footer() {
                         <a href="#" className="text-gray-500">Linkedin</a>
                     </div>
                 </div>
+            </div>
+            <div className="py-5 bg-[#1E1E1E]">
+                <p className="text-center text-xl text-white">
+                     Cette plateforme est réalisée par 
+                     <a href="#" className="underline ml-2">PROMISING TEAM</a>
+                </p>
             </div>
         </footer>
     )
